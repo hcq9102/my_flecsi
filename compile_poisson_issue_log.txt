@@ -1,0 +1,41 @@
+1. cmake
+
+chuanqiu@rostam1:/work/chuanqiu/zz20/flecsi2/tutorial/standalone/poisson/mybuild$ 
+      cmake \
+      -DCMAKE_PREFIX_PATH=/work/chuanqiu/zz20/.spack-env/view/ \
+      -DFleCSI_DIR=/work/chuanqiu/zz20/.spack-env/view/lib64/cmake/FleCSI \
+      -DHPX_IGNORE_COMPILER_COMPATIBILITY=On ..
+                                                                                  
+           
+   -- Build files have been written to: /work/chuanqiu/zz20/flecsi2/tutorial/standalone/poisson/mybuild                                                                       
+                                                                                  
+ 2. make   
+ 
+chuanqiu@rostam1:/work/chuanqiu/zz20/flecsi2/tutorial/standalone/poisson/mybuild$ make
+ 
+[  9%] Building CXX object app/CMakeFiles/poisson.dir/poisson.cc.o
+[ 18%] Building CXX object app/CMakeFiles/poisson.dir/analyze.cc.o
+[ 27%] Building CXX object app/CMakeFiles/poisson.dir/finalize.cc.o
+[ 36%] Building CXX object app/CMakeFiles/poisson.dir/initialize.cc.o
+[ 45%] Building CXX object app/CMakeFiles/poisson.dir/problem.cc.o
+[ 54%] Building CXX object app/CMakeFiles/poisson.dir/solve.cc.o
+[ 63%] Building CXX object app/CMakeFiles/poisson.dir/tasks/init.cc.o
+[ 72%] Building CXX object app/CMakeFiles/poisson.dir/tasks/io.cc.o
+[ 81%] Building CXX object app/CMakeFiles/poisson.dir/tasks/norm.cc.o
+[ 90%] Building CXX object app/CMakeFiles/poisson.dir/tasks/smooth.cc.o
+[100%] Linking CXX executable poisson
+CMakeFiles/poisson.dir/poisson.cc.o: In function `(anonymous namespace)::check_hpx_version()':
+poisson.cc:(.text+0x10): undefined reference to `hpx::hpx_check_boost_version_107900'
+CMakeFiles/poisson.dir/analyze.cc.o: In function `(anonymous namespace)::check_hpx_version()':
+analyze.cc:(.text+0x10): undefined reference to `hpx::hpx_check_boost_version_107900'
+CMakeFiles/poisson.dir/finalize.cc.o: In function `(anonymous namespace)::check_hpx_version()':
+finalize.cc:(.text+0x10): undefined reference to `hpx::hpx_check_boost_version_107900'
+CMakeFiles/poisson.dir/initialize.cc.o: In function `(anonymous namespace)::check_hpx_version()':
+initialize.cc:(.text+0x10): undefined reference to `hpx::hpx_check_boost_version_107900'
+CMakeFiles/poisson.dir/problem.cc.o: In function `(anonymous namespace)::check_hpx_version()':
+problem.cc:(.text+0x10): undefined reference to `hpx::hpx_check_boost_version_107900'
+CMakeFiles/poisson.dir/solve.cc.o:solve.cc:(.text+0x10): more undefined references to `hpx::hpx_check_boost_version_107900' follow
+collect2: error: ld returned 1 exit status
+make[2]: *** [app/CMakeFiles/poisson.dir/build.make:254: app/poisson] Error 1
+make[1]: *** [CMakeFiles/Makefile2:98: app/CMakeFiles/poisson.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
