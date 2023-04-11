@@ -9,3 +9,9 @@ chuanqiu@rostam1:/tmp/chuanqiu/spack-stage/spack-stage-flecsi-2.2-x5nwdh7d6sa3j3
 
 ---- so its branch 2
 
+
+
+----------------------------- spack install successfully
+
+chuanqiu@rostam1:/work/chuanqiu/zz20/spack/opt/spack/linux-rhel8-skylake_avx512/gcc-9.2.1/flecsi-2.2-x5nwdh7d6sa3j3gojw6os5qiqkzeq2ul/include/flecsi$ git branch
+* develop
