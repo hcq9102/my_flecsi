@@ -39,3 +39,11 @@ collect2: error: ld returned 1 exit status
 make[2]: *** [app/CMakeFiles/poisson.dir/build.make:254: app/poisson] Error 1
 make[1]: *** [CMakeFiles/Makefile2:98: app/CMakeFiles/poisson.dir/all] Error 2
 make: *** [Makefile:91: all] Error 2
+
+--------------------------------------------------------------------------------------------------------------------------
+Issue resolved:
+     boost version doesn't match;
+     its boost@1.81 as default when compiling FleCSI and HPX; I run the Poisson app with the latest boost@1.80 on Rostam.
+
+method:
+recompile FleCSI and HPX with boost@1.80 using spack. 
