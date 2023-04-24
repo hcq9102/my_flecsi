@@ -14,4 +14,6 @@
     before install&build flecsi using spack.
     
  #### details -- scripts 
+ 
+     See folder:  build hpx_backend flecsi
      
