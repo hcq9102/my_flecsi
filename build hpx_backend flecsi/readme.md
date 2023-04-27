@@ -30,4 +30,6 @@ https://github.com/STEllAR-GROUP/flecsi2/blob/502ca8ced4d0712b4f482dd055efa0ca23
       
       ---change hpx@1.8.1 to hpx@master
       
-      Note: if something wrong with the script, just remove '^hpx@master' in script. i.e.    https://github.com/hcq9102/my_flecsi/blob/main/build%20hpx_backend%20flecsi/build_flecsi_spack_ctest_hpx%40master.sh#L20-L21
+      Note: if something wrong with the script, just remove '^hpx@master' in script. i.e. 
+      
+   https://github.com/hcq9102/my_flecsi/blob/main/build%20hpx_backend%20flecsi/build_flecsi_spack_ctest_hpx%40master.sh#L20-L21
