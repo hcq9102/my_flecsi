@@ -29,3 +29,5 @@ https://github.com/STEllAR-GROUP/flecsi2/blob/502ca8ced4d0712b4f482dd055efa0ca23
    https://github.com/STEllAR-GROUP/flecsi2/blob/502ca8ced4d0712b4f482dd055efa0ca23e940d5/spack-repo/packages/flecsi/package.py#L116
       
       ---change hpx@1.8.1 to hpx@master
+      
+      Note: if something wrong with the script, just remove '^hpx@master' in script.
