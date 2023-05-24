@@ -5,7 +5,7 @@ CORE_COUNTS=(1 2 4 8 16 24 32 40)
 
 # Path to executables
 exe_dir="/work/chuanqiu/zzzztest523/flecsi2/cmake-build_release/test"
-# Set the list of executable paths to test
+# Set the list of executable paths to test : follow ctest order
 EXECUTABLES=(
     "$exe_dir/exec/kernel"
     "$exe_dir/exec/task"
@@ -37,12 +37,12 @@ NUM=4
 
 for ((j=1; j<=$ITERATIONS; j++)); do
     echo "Running iteration $j..."
-    # Create a directory to save the test results
-    RESULTS_DIR="522test_release_csv_($NUM)localities_iter_$j" 
+    # Create a directory to save the test results log,including localities layout and run time
+    RESULTS_DIR="test_release_csv_($NUM)localities_iter_$j" 
 
     mkdir -p $RESULTS_DIR
     # Create a csv file to store the run times of each executable
-    CSV_FILE="$RESULTS_DIR/test_result.csv"
+    CSV_FILE="$RESULTS_DIR/eachtest_result.csv"
     echo "Executable,Cores,Run Time(s)" > $CSV_FILE
 
     CSV_FILE2="$RESULTS_DIR/cores_sumtime_n$NUM.csv"
