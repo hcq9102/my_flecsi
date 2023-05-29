@@ -28,7 +28,6 @@ if [ ! -d ${SPACK_DIR} ]; then
   sed -i 's/unify: false/unify: true/' ${BASE_DIR}/spack.yaml
   spack repo add ${FLECSI_DIR}/spack-repo/
   spack external find ninja cmake openmpi python autoconf automake perl m4 hpx ca-certificates-mozilla
-  spack add googletest
   spack add flecsi%gcc@12.2.0 backend=hpx +flog +unit ^hpx@master ^boost@1.80.0
   #spack add flecsi%gcc@9.2.1 backend=hpx +flog +unit ^hpx@master ^boost@1.80.0
   spack concretize -f
