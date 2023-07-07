@@ -13,4 +13,5 @@
    --Modify the commit to target COMMIT_HASH in this syntax : [version('hpxv', commit='YOUR COMMIT_HASH')](https://github.com/hcq9102/my_flecsi/blob/main/build%20hpxbackend%20with%20commit/package.py#L21)
    
    --save
-6. run the script.
+6. $cd PROJECT
+7. $ run the [script](https://github.com/hcq9102/my_flecsi/blob/main/build%20hpxbackend%20with%20commit/build_flecsi_spack_ctest.sh).
