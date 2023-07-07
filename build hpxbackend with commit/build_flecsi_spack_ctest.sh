@@ -23,7 +23,7 @@ mkdir -p ${BASE_DIR}
 if [ ! -d ${FLECSI_DIR} ]; then
   git clone --branch task_local2 https://github.com/STEllAR-GROUP/flecsi2.git ${FLECSI_DIR}
   cd ${FLECSI_DIR}
-  git checkout 6f5d47b9beea394095e886316282ce11aff8a512
+  git checkout COMMIT_HASH
 fi
 # spack build
 if [ ! -d ${SPACK_DIR} ]; then
