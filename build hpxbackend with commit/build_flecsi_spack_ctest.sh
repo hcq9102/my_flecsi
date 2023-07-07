@@ -25,7 +25,7 @@ if [ ! -d ${FLECSI_DIR} ]; then
   cd ${FLECSI_DIR}
   git checkout 6f5d47b9beea394095e886316282ce11aff8a512
 fi
-
+# spack build
 if [ ! -d ${SPACK_DIR} ]; then
   git clone https://github.com/spack/spack.git ${SPACK_DIR}
   source ${SPACK_DIR}/share/spack/setup-env.sh
