@@ -6,8 +6,7 @@
 #SBATCH --time=05:00:00
 #SBATCH --partition=medusa
 
-# Distributed under the Boost Software License, Version 1.0. (See accompanying
-# file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
+
 
 # set -xe
 #module purge
@@ -20,6 +19,7 @@ FLECSI_DIR=${BASE_DIR}/flecsi2
 
 mkdir -p ${BASE_DIR}
 
+# (checkout the specific commit)already done manually before running this script.
 if [ ! -d ${FLECSI_DIR} ]; then
   git clone --branch task_local2 https://github.com/STEllAR-GROUP/flecsi2.git ${FLECSI_DIR}
   cd ${FLECSI_DIR}
