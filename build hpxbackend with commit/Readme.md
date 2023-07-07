@@ -8,7 +8,7 @@
    
 2. #### Modify flecsi/package.py file,   PATH:  PROJECTNAME/flecsi2/spack-repo/packages/flecsi/package.py
    
-   --replace all content of package.py with the [package.py](https://github.com/hcq9102/my_flecsi/blob/main/build%20hpxbackend%20with%20commit/package.py) file in this folder.
+   --replace all content of package.py with the [package.py](https://github.com/hcq9102/my_flecsi/blob/main/build%20hpxbackend%20with%20commit/package.py) file in this folder. (using the attached package.py in this folder, wont get 'unit' option error anymore, 'unit' option is added).
    
    --Modify the commit to target COMMIT_HASH in this syntax : [version('hpxv', commit='YOUR COMMIT_HASH')](https://github.com/hcq9102/my_flecsi/blob/main/build%20hpxbackend%20with%20commit/package.py#L21)
    
