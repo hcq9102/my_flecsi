@@ -18,7 +18,7 @@ class Flecsi(CMakePackage, CudaPackage, ROCmPackage):
     homepage = 'http://flecsi.org/'
     git = 'https://github.com/STEllAR-GROUP/flecsi2.git'; 
     
-    version('hpxbcd6f', commit='6f5d47b9beea394095e886316282ce11aff8a512')
+    version('hpxv', commit='6f5d47b9beea394095e886316282ce11aff8a512')
 
     #--------------------------------------------------------------------------#
     # Variants
