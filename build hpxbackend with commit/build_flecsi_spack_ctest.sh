@@ -41,14 +41,14 @@ fi
 spack env activate -p ${BASE_DIR}
 
 #build flecsi from source with spack env
-cmake -S ${FLECSI_DIR} -B ${FLECSI_DIR}/cmake-build22-commit -DFLECSI_BACKEND=hpx -DENABLE_UNIT_TESTS=ON -DCMAKE_BUILD_TYPE=Release #-DCMAKE_INSTALL_PREFIX=/work/chuanqiu/zz223_medusa_hpxmaster1/install
-cmake --build ${FLECSI_DIR}/cmake-build22-commit/ --parallel
+cmake -S ${FLECSI_DIR} -B ${FLECSI_DIR}/cmake-build-commit -DFLECSI_BACKEND=hpx -DENABLE_UNIT_TESTS=ON -DCMAKE_BUILD_TYPE=Release #-DCMAKE_INSTALL_PREFIX=/work/chuanqiu/zz223_medusa_hpxmaster1/install
+cmake --build ${FLECSI_DIR}/cmake-build-commit/ --parallel
 
 #make install
 #cd ${FLECSI_DIR}/cmake-build/
 #make install 
 #ctest
-cd ${FLECSI_DIR}/cmake-build22-commit/
+cd ${FLECSI_DIR}/cmake-build-commit/
 ctest
 
 #exit spack
